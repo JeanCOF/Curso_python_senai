@@ -90,15 +90,15 @@ else:
 #➢ Mulheres ganham 13% de desconto
 
 
-def calc_desc(sexo, val):
+def calc_desc():
     # Solicita o nome do cliente
     nome = input("Digite o nome do cliente: ")
     
     # Solicita o gênero do cliente e garante que o valor inserido seja válido
-    sexo = input("Digite o gênero do cliente M-Masculino / F-Feminino: ").upper()
+    sexo = input("Digite o gênero do cliente (M-Masculino / F-Feminino): ").upper()
     while sexo not in ["M", "F"]:
         print("INCORRETO, Digite um dos dois gêneros: M-Masculino / F-Feminino")
-        sexo = input("Digite o gênero do cliente M-Masculino / F-Feminino: ").upper()
+        sexo = input("Digite o gênero do cliente (M-Masculino / F-Feminino): ").upper()
     
     # Solicita o valor da compra e converte para float
     val = float(input("Digite o valor da compra: "))
@@ -114,14 +114,14 @@ def calc_desc(sexo, val):
     desconto_aplicado = val * desc
     
     # Exibe o valor a ser pago e o desconto
-    # A formatação para moeda é feita pelo locale.currency
-    print("O valor a ser pago é de {}, e o desconto foi de {}".format(locale.currency(val_desc), locale.currency(desconto_aplicado)))
+    print(f"O valor a ser pago é de {locale.currency(val_desc)}, e o desconto foi de {locale.currency(desconto_aplicado)}")
     
     return nome, sexo, val, val_desc
 
-
 # Exibe os dados da compra do cliente chamando a função calc_desc
-print("Dados da compra do cliente: {}".format(calc_desc(sexo, val)))
+print("Dados da compra do cliente:")
+calc_desc()
+
 
 #6. Faça um algoritmo que pergunte a distância que um passageiro deseja
 #percorrer em Km, calcule o preço da passagem cobrando:
