@@ -14,7 +14,7 @@ def subtracao(a1,a2):
 a1=float(input("Digite o 1° numero para subtração: "))
 a2=float(input("Digite o 2° numero para subtração: "))
 
-print("O valor da subtração é {}".format(soma(a1,a2)))
+print("O valor da subtração é {}".format(subtracao(a1,a2)))
 #3. Multiplicação Simples: Crie uma função que recebe dois números e retorna
 #o resultado da multiplicação deles.
 def multiplicacao(a1,a2):
@@ -23,7 +23,7 @@ def multiplicacao(a1,a2):
 a1=float(input("Digite o 1° numero para Multiplicação: "))
 a2=float(input("Digite o 2° numero para Multiplicação: "))
 
-print("O valor da multiplicação é {}".format(soma(a1,a2)))
+print("O valor da multiplicação é {}".format(multiplicacao(a1,a2)))
 #4. Divisão Simples: Crie uma função que recebe dois números e retorna o
 #resultado da divisão do primeiro pelo segundo.
 def divisao(a1,a2):
@@ -32,7 +32,7 @@ def divisao(a1,a2):
 a1=float(input("Digite o 1° numero para Divisão: "))
 a2=float(input("Digite o 2° numero para Divisão: "))
 
-print("O valor da divisão é {}".format(soma(a1,a2)))
+print("O valor da divisão é {}".format(divisao(a1,a2)))
 #5. Mensagem de Saudação: Crie uma função que recebe um nome como
 #argumento e retorna uma mensagem de saudação, como "Olá, [nome]!".
 def saudacao(nome):
@@ -188,7 +188,7 @@ raio=float(input("Digite o raio da esfera: "))
 volume=calc_vol(raio)
 print(f"O volume da esfera é {volume:.2f} cm³")
 #18.Escreva uma função que receba dois números inteiros retorne o menor número
-def maior_num(nums):
+def menor_num(nums):
     for i in range(0,2):
         num=float(input(f"Informe o Numero {i+1}: "))
         nums.append(num)
@@ -197,4 +197,4 @@ def maior_num(nums):
     return maior
 nums = []          
 
-print("O menor numero da sequencia é {}".format(maior_num(nums)))
+print("O menor numero da sequencia é {}".format(menor_num(nums)))
