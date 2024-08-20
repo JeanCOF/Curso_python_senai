@@ -1,0 +1,4 @@
+O Python é uma linguagem de programação, como você já deve ter ouvido falar de várias outras que existem.
+Só que foi desenvolvido para ser simples, fácil de aprender e muito versátil, ou seja, você vai poder utilizar essa linguagem para diversas tarefas.
+Pode construir aplicativos, criar sites, desenvolver programas, criar jogos, fazer análise de dados, inteligência artificial, entre outras atividades.
+Ao aprender o que é Python, você tem muitas opções. Como é uma linguagem mais fácil de aprender, é excelente para você começar no mundo da programação.
