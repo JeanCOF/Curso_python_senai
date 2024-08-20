@@ -63,7 +63,7 @@ with open("exercicio1.txt", 'w') as ex1:
               "Só que foi desenvolvido para ser simples, fácil de aprender e muito versátil, ou seja, você vai poder utilizar essa linguagem para diversas tarefas.\n"
               "Pode construir aplicativos, criar sites, desenvolver programas, criar jogos, fazer análise de dados, inteligência artificial, entre outras atividades.\n"
               "Ao aprender o que é Python, você tem muitas opções. Como é uma linguagem mais fácil de aprender, é excelente para você começar no mundo da programação.")
-
+ex1.close()
 leitura2=open("exercicio1.txt",'r')
 print(leitura2.read())
 leitura2.close()
