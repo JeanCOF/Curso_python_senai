@@ -42,7 +42,7 @@ ex2.close()
 #3. Escrever múltiplas linhas: Crie um programa que escreve três linhas de texto
 #em um arquivo chamado notas.txt.
 ex3=open("exercicio3.txt",'w')
-for i in range(1, 4):
+for i in range(1,4):
     # Solicita ao usuário a frase
     frase = input("Digite a {} frase: ".format(i))
     # Escreve a frase no arquivo com uma nova linha no final
@@ -51,7 +51,7 @@ ex3.close()
 #4. Escrever números em arquivo: Crie um programa que escreve os números
 #de 1 a 10 em um arquivo chamado numeros.txt, um número por linha.
 ex4=open("exercicio4.txt",'w')
-for i in range(1, 11):
+for i in range(1,11):
     ex4.write(str(i) + '\n')
 ex4.close()
 #6. Ler conteúdo de um arquivo: Crie um programa que lê e exibe o conteúdo do
