@@ -61,15 +61,16 @@ print(dicio2["nome"])
 #4. Adicione um novo par chave-valor a um dicionário.
 dicio2["idade"]= 22
 #5. Remova um par chave-valor de um dicionário usando a função pop.
-dicio2.pop()
+ultimo=dicio2.pop("nome")
+print(ultimo)
 #6. Verifique se uma chave específica está presente em um dicionário.
 print("verificação se bairro está no dicionário")
 print("bairro" in dicio2)
 #7. Verifique se um valor específico está presente em um dicionário.
 print("verificação se leporace está no dicionário")
-print("leporace" in dicio2["bairro"])
+print("leporace" in dicio2.values())
 #8. Conte quantos pares chave-valor um dicionário possui.
-print("Quantidade de elementos no didionário")
+print("Quantidade de elementos no dicionário")
 print(len(dicio2))
 #9. Copie um dicionário para outro.
 dicio3= dicio2

@@ -1,8 +1,13 @@
-num=0
-i=0
+import random
+nomes=[]
+for i in range(4):
+ 
+    aluno=str(input("Digite o nome do aluno: "))
+    nomes.append(aluno)
+    
 
-while i != 20:
-    num+=1
-    if num %2 !=0:
-        print(num)
-    i+=1
+escolhido = random.choice(nomes)
+print(nomes)
+print("O nome escolhido foi: {} ".format(escolhido))
+random.shuffle(nomes)
+print("A lista de alunos foi {}".format(nomes))
