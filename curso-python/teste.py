@@ -1,13 +1,17 @@
-import random
-nomes=[]
-for i in range(4):
- 
-    aluno=str(input("Digite o nome do aluno: "))
-    nomes.append(aluno)
-    
+import tkinter as tk
+from tkinter import messagebox
 
-escolhido = random.choice(nomes)
-print(nomes)
-print("O nome escolhido foi: {} ".format(escolhido))
-random.shuffle(nomes)
-print("A lista de alunos foi {}".format(nomes))
+# Função para mostrar a mensagem
+def mostrar_mensagem():
+    messagebox.showinfo("Alerta", "Esta é uma caixa de texto de alerta!")
+
+# Configuração da janela principal
+root = tk.Tk()
+root.title("Exemplo de Caixa de Texto")
+
+# Criação de um botão que chama a função
+botao = tk.Button(root, text="Mostrar Alerta", command=mostrar_mensagem)
+botao.pack(pady=20)
+
+# Iniciar o loop principal da interface
+root.mainloop()
